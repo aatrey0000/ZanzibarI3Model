@@ -15,13 +15,12 @@ This folder contains *n* files:
 * interventions.csv: This contains the fixed parameter values derived from the RADZEC study and other sources.
 
 ## I3 Model
-This folder contains the files used to simulate interventions following calibration.
-* RCD_stochastic_3day.py: This includes changing the proportion of index cases followed up from 35% to a range of other values. Otherwise, all interventions remain at the baseline value
-* RCD_neighbours_3day.py: Adding screening and treatment of 4 neighbouring households
-* RCD_double_3day.py: Doubling the treatment seeking rate
-* RCD_rfmda_3day.py: Switching from RCD to rfMDA
-* RCD_rfmda_neighbours_3day.py: Switching from RCD to rfMDA and including 4 neighbouring households
-* RCD_imp_treat_30_3day.py: Treating 50% of imported cases coming onto btoh Pemba and Unguja
+This folder contains the files used to simulate various combinations of interventions.
+* i3_model.py: Base model in which all RCD-related interventions, treatment of travellers and transmission reduction on Zanzibar are included
+* i3_model_betared_MT.py: Treatment on mainland Tanzania also simulated
+* i3_model_param.py: Testing parameter uncertainty
+* i3_model_varying_tau.py: Testing a fixed vs varying targetting ratio
+
 
 
 ## Sensitivity Analysis
